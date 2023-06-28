@@ -22,7 +22,7 @@ public class Rule3 implements IRule {
     /***
      *  15% for 4 wheeler
      *  25% for 3 wheeler
-     *  40% for 2 wheeler
+     *  45% for 2 wheeler
      * @param data
      * @return
      */
@@ -36,7 +36,7 @@ public class Rule3 implements IRule {
 
             } else if (data.getEVehicle().name().equals(EVehicle.TWO_WHEELER.name())) {
 
-                return rulesHelper.applyDiscount(data, 0.4);//40% discount
+                return rulesHelper.applyDiscount(data, 0.45);//45% discount
 
             } else if (data.getEVehicle().name().equals(EVehicle.THREE_WHEELER.name())) {
 
